@@ -1,84 +1,43 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>login page</title>
+        <title>Login</title>
         <style>
-                    
-
-            fieldset
-            {
-                text-align:center;
-                margin-top: 100px;
-                margin-right: 100px;
-                margin-left: 500px;
-                border-radius:15px;
-                width :500px;
-                height:350px;
-                
+            div{
+                width: 400px; 
+                margin: 0 auto; 
+                padding: 20px; 
+                background-color: white; 
+                border-radius: 30px;
             }
-            .innerbox
-            {
-                padding:10px 20px;
-                text-align:center;
-            }
-
-            label {
-                display: inline-block;
-                width: 100px; 
-                align-items: center;
-                justify-content: center;
-                font-style: italic;
-                font-weight: bold;
-                
-            }
-            input {
-                height:30px;
-                width: 200px; 
-            }
-            .b
-            {
-                background-color:aliceblue;
-                text-align:center;
-                padding:7px;
-                border-radius:3px;
-                
-            }
-            .c
-            {
-            
-                margin-top:20px;
-                padding:10px;
-                width:80px;
-                border-radius:5px;
-
-            }
-            
         </style>
     </head>
-    
-
-    <body style="background-color: #ffffff;">
-        <fieldset style="background-color:#ffffff;">
-            <form name = "myform" onsubmit="return validateForm()">
-     
-                <div class = "box">
-                    <p>Don't have account?
-                        <a href ="page03.html">Sign up</a>
-                    </p>
-                    <div class="innerbox">
-                        <label for ="email"> <br>Email : </br></label>
-                        <input type ="text" id = "email" name="email" placeholder="Enter ur mail"></br></br>
-                        <label for ="passwd"> <br>Password:</br> </label>
-                        <input type ="text" id = "passwd" name="passwd" placeholder = "Enter password" ></br></br>
-                    </div>
-                    <center><a href="forget">forgot password?</a></br></br></center>
-                    <button class ="b">Login</button>
-                    
-                </div>
-            </form>
-       
-        </fieldset>
-        <center><button class="c"><a href = "index.html">Home</button></center>
-
+    <body style="background-color: rgb(171, 173, 173);">
+        <div>
+            <img src="back.png" width="30" height="30" style="margin-left: 0%; cursor: pointer;" onclick="window.location.href='index.html';">
+            <center><img src="pinterest_logo.png" alt="Pinterest Logo" width="90" height="40"></center>
+            <center><h1>Welcome to Pinterest</h1></center>
+        
+        <p style="margin-bottom: 0%; margin-left: 80;">Email</p>
+            <center><input type="text" style="width: 250px; height: 30px; border-radius: 10px; border-width: 2px; border-color: rgb(41, 41, 41);" placeholder="Email"></center>
+            <p style="margin-bottom: 0%; margin-left: 80;">Password</p>
+            <center><input type="password" style="width: 250px; height: 30px; border-radius: 10px; border-width: 2px; border-color: rgb(41, 41, 41);" placeholder=" Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#128065;">
+            <p><b>Forgot your password ?</b></p>
+            <button style="background-color: red; border-radius: 12px; width: 250px; height: 30px; color: white;"><b>Log in</b></button>
+            <h3><b>OR</b></h3>
+        <button style=" border-radius: 12px; width: 250px; height: 30px; color: white;">
+            <img src="google_logo.jpg" alt="Google Logo" width="20" height="20" style="vertical-align: middle; margin-left: 0%;">
+            <span style="margin-left: 10px; color: black;">Log in with Google</span>
+        </button><br><br>
+        <button style="background-color: blue; border-radius: 12px; width: 250px; height: 30px; color: white;">
+            <img src="facebook.png" alt="Google Logo" width="20" height="20" style="vertical-align: middle; margin-left: 0%;">
+            <span style="margin-left: 10px; color: white;">Log in with Facebook</span>
+        </button><br><br>
+        <p><b>Not on Pinterest yet? <button onclick="window.location.href='page03.html'" style="background-color: transparent; border: none; color: blue; text-decoration: underline; cursor: pointer;">Sign up</button></b></p>
+        <br>
+        <p>By continuing , you agree to pinterest's</p>
+        <p><b>Terms of service</b> and acknowledge you've read our</p>
+        <p><b>Privacy policy.</b></p>
+        </center>
+</div>
     </body>
 </html>
